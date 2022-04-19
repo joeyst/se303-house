@@ -8,6 +8,8 @@ class House
       return "This is the cat that killed the rat that ate the malt that lay in the house that Jack built.\n"
     elsif (line_number == 5)
       return "This is the dog that worried the cat that killed the rat that ate the malt that lay in the house that Jack built.\n"
+    elsif (line_number == 6)
+      return "This is the cow with the crumpled horn that tossed the dog that worried the cat that killed the rat that ate the malt that lay in the house that Jack built.\n"
     end
     "This is the house that Jack built.\n"
   end
