@@ -67,4 +67,8 @@ class House
       ""
     end
   end
+
+  def cow(line_number)
+
+  end
 end
