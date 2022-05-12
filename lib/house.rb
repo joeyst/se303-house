@@ -75,6 +75,10 @@ class House
   end
 
   def dog(line_number)
-    "the dog that worried "
+    if line_number >= 5
+      "the dog that worried "
+    else
+      ""
+    end
   end
 end
