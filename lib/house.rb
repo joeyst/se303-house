@@ -61,4 +61,8 @@ class House
       ""
     end
   end
+
+  def maiden(line_number)
+
+  end
 end
