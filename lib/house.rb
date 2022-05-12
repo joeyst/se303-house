@@ -3,8 +3,6 @@ class House
     case line_number
     when 1
       "This is the house that Jack built.\n"
-    when 2
-      "This is #{horse_and_hound(line_number)}#{farmer(line_number)}#{rooster(line_number)}#{priest(line_number)}#{tattered_and_torn(line_number)}#{maiden(line_number)}#{cow(line_number)}#{dog(line_number)}#{cat(line_number)}#{rat(line_number)}the malt that lay in the house that Jack built.\n"
     else
       "This is #{horse_and_hound(line_number)}#{farmer(line_number)}#{rooster(line_number)}#{priest(line_number)}#{tattered_and_torn(line_number)}#{maiden(line_number)}#{cow(line_number)}#{dog(line_number)}#{cat(line_number)}#{rat(line_number)}the malt that lay in the house that Jack built.\n"
     end
