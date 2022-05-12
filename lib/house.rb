@@ -93,6 +93,10 @@ class House
   end
 
   def malt(line_number)
-    "the malt that lay in "
+    if line_number >= 2
+      "the malt that lay in "
+    else
+      ""
+    end
   end
 end
