@@ -55,4 +55,8 @@ class House
       ""
     end
   end
+
+  def tattered_and_torn(line_number)
+    "the man all tattered and torn that kissed "
+  end
 end
