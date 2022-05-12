@@ -22,7 +22,7 @@ class House
     when 10
       "This is the rooster that crowed in the morn that woke the priest all shaven and shorn that married the man all tattered and torn that kissed the maiden all forlorn that milked the cow with the crumpled horn that tossed the dog that worried the cat that killed the rat that ate the malt that lay in the house that Jack built.\n"
     else
-      "This is #{horse_and_hound(line_number)}#{farmer(line_number)} the rooster that crowed in the morn that woke the priest all shaven and shorn that married the man all tattered and torn that kissed the maiden all forlorn that milked the cow with the crumpled horn that tossed the dog that worried the cat that killed the rat that ate the malt that lay in the house that Jack built.\n"
+      "This is #{horse_and_hound(line_number)}#{farmer(line_number)}the rooster that crowed in the morn that woke the priest all shaven and shorn that married the man all tattered and torn that kissed the maiden all forlorn that milked the cow with the crumpled horn that tossed the dog that worried the cat that killed the rat that ate the malt that lay in the house that Jack built.\n"
     end
   end
 
@@ -39,6 +39,10 @@ class House
   end
 
   def farmer(line_number)
-    "the farmer sowing his corn that kept"
+    if line_number >= 11
+      "the farmer sowing his corn that kept "
+    else
+      ""
+    end
   end
 end
