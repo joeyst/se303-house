@@ -85,4 +85,8 @@ class House
       ""
     end
   end
+
+  def rat(line_number)
+
+  end
 end
