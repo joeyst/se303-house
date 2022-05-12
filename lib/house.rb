@@ -81,6 +81,6 @@ class House
   end
 
   def cat(line_number)
-
+    "the cat that killed "
   end
 end
