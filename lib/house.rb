@@ -49,4 +49,8 @@ class House
       ""
     end
   end
+
+  def priest(line_number)
+
+  end
 end
