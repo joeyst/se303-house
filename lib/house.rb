@@ -57,6 +57,10 @@ class House
   end
 
   def tattered_and_torn(line_number)
-    "the man all tattered and torn that kissed "
+    if line_number >= 8
+      "the man all tattered and torn that kissed "
+    else
+      ""
+    end
   end
 end
