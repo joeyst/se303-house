@@ -79,4 +79,8 @@ class House
       ""
     end
   end
+
+  def cat(line_number)
+
+  end
 end
