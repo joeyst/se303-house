@@ -87,6 +87,10 @@ class House
   end
 
   def rat(line_number)
-    "the rat that ate "
+    if line_number >= 3
+      "the rat that ate "
+    else
+      ""
+    end
   end
 end
