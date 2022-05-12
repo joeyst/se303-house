@@ -91,4 +91,7 @@ class House
       ""
     end
   end
+
+  def malt(line_number)
+  end
 end
