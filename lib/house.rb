@@ -81,6 +81,10 @@ class House
   end
 
   def cat(line_number)
-    "the cat that killed "
+    if line_number >= 4
+      "the cat that killed "
+    else
+      ""
+    end
   end
 end
