@@ -93,5 +93,6 @@ class House
   end
 
   def malt(line_number)
+    "the malt that lay in "
   end
 end
