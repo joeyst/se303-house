@@ -69,6 +69,6 @@ class House
   end
 
   def cow(line_number)
-
+    "the cow with the crumpled horn that tossed "
   end
 end
