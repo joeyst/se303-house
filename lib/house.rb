@@ -69,6 +69,10 @@ class House
   end
 
   def cow(line_number)
-    "the cow with the crumpled horn that tossed "
+    if line_number >= 6
+      "the cow with the crumpled horn that tossed "
+    else
+      ""
+    end
   end
 end
