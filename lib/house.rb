@@ -73,4 +73,8 @@ class House
       ""
     end
   end
+
+  def dog(line_number)
+
+  end
 end
