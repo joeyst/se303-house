@@ -45,6 +45,10 @@ class House
   end
 
   def rooster(line_number)
-    "the rooster that crowed in the morn that woke "
+    if line_number >= 10
+      "the rooster that crowed in the morn that woke "
+    else
+      ""
+    end
   end
 end
