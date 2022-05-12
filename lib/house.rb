@@ -87,6 +87,6 @@ class House
   end
 
   def rat(line_number)
-
+    "the rat that ate "
   end
 end
