@@ -43,4 +43,8 @@ class House
       ""
     end
   end
+
+  def rooster(line_number)
+
+  end
 end
