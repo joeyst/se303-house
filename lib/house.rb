@@ -75,6 +75,6 @@ class House
   end
 
   def dog(line_number)
-
+    "the dog that worried "
   end
 end
