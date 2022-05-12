@@ -63,6 +63,10 @@ class House
   end
 
   def maiden(line_number)
-    "the maiden all forlorn that milked "
+    if line_number >= 7
+      "the maiden all forlorn that milked "
+    else
+      ""
+    end
   end
 end
