@@ -37,4 +37,7 @@ class House
       ""
     end
   end
+
+  def farmer(line_number)
+  end
 end
