@@ -11,7 +11,7 @@ class House
 
   def horse_and_hound(line_number)
     if line_number >= 12
-      "the horse and the hound and the horn that belonged to "
+      @@phrases[0]
     else
       ""
     end
