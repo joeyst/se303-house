@@ -5,7 +5,7 @@ class House
     "the priest all shaven and shorn that married "]
 
   def line(line_number)
-      "This is #{appended_phrases(line_number)}#{priest(line_number)}#{tattered_and_torn(line_number)}#{maiden(line_number)}#{cow(line_number)}#{dog(line_number)}#{cat(line_number)}#{rat(line_number)}#{malt(line_number)}the house that Jack built.\n"
+      "This is #{appended_phrases(line_number)}#{tattered_and_torn(line_number)}#{maiden(line_number)}#{cow(line_number)}#{dog(line_number)}#{cat(line_number)}#{rat(line_number)}#{malt(line_number)}the house that Jack built.\n"
   end
 
   def recite
@@ -13,7 +13,7 @@ class House
   end
 
   def appended_phrases(line_number)
-    ((12-line_number)..(2)).map {|phrase_number| @@phrases[phrase_number]}.join("")
+    ((12-line_number)..(3)).map {|phrase_number| @@phrases[phrase_number]}.join("")
   end
 
   def horse_and_hound(line_number)
