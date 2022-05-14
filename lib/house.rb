@@ -42,7 +42,7 @@ class House
 
   def priest(line_number)
     if line_number >= 9
-      "the priest all shaven and shorn that married "
+      @@phrases[3]
     else
       ""
     end
