@@ -19,7 +19,7 @@ class House
 
   def farmer(line_number)
     if line_number >= 11
-      "the farmer sowing his corn that kept "
+      @@phrases[1]
     else
       ""
     end
