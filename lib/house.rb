@@ -31,7 +31,7 @@ class House
 
   def rooster(line_number)
     if line_number >= 10
-      "the rooster that crowed in the morn that woke "
+      @@phrases[2]
     else
       ""
     end
