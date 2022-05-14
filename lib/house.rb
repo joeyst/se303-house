@@ -1,5 +1,8 @@
 class House
-  @@phrases = ["the horse and the hound and the horn that belonged to ", "the farmer sowing his corn that kept ", "the rooster that crowed in the morn that woke "]
+  @@phrases = ["the horse and the hound and the horn that belonged to ", 
+    "the farmer sowing his corn that kept ", 
+    "the rooster that crowed in the morn that woke ",
+    "the priest all shaven and shorn that married "]
 
   def line(line_number)
       "This is #{appended_phrases(line_number)}#{priest(line_number)}#{tattered_and_torn(line_number)}#{maiden(line_number)}#{cow(line_number)}#{dog(line_number)}#{cat(line_number)}#{rat(line_number)}#{malt(line_number)}the house that Jack built.\n"
