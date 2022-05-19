@@ -8,7 +8,7 @@ class House
     "the cow with the crumpled horn that tossed "]
 
   def line(line_number)
-      "This is #{appended_phrases(line_number)}#{cow(line_number)}#{dog(line_number)}#{cat(line_number)}#{rat(line_number)}#{malt(line_number)}the house that Jack built.\n"
+      "This is #{appended_phrases(line_number)}#{dog(line_number)}#{cat(line_number)}#{rat(line_number)}#{malt(line_number)}the house that Jack built.\n"
   end
 
   def recite
@@ -16,7 +16,7 @@ class House
   end
 
   def appended_phrases(line_number)
-    ((12-line_number)..(5)).map {|phrase_number| @@phrases[phrase_number]}.join("")
+    ((12-line_number)..(6)).map {|phrase_number| @@phrases[phrase_number]}.join("")
   end
 
   def cow(line_number)
