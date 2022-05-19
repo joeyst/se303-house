@@ -16,14 +16,6 @@ class House
   def appended_phrases(line_number)
     ((12-line_number)..(4)).map {|phrase_number| @@phrases[phrase_number]}.join("")
   end
-  
-  def tattered_and_torn(line_number)
-    if line_number >= 8
-      "the man all tattered and torn that kissed "
-    else
-      ""
-    end
-  end
 
   def maiden(line_number)
     if line_number >= 7
