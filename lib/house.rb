@@ -16,39 +16,7 @@ class House
   def appended_phrases(line_number)
     ((12-line_number)..(3)).map {|phrase_number| @@phrases[phrase_number]}.join("")
   end
-
-  def horse_and_hound(line_number)
-    if line_number >= 12
-      @@phrases[0]
-    else
-      ""
-    end
-  end
-
-  def farmer(line_number)
-    if line_number >= 11
-      @@phrases[1]
-    else
-      ""
-    end
-  end
-
-  def rooster(line_number)
-    if line_number >= 10
-      @@phrases[2]
-    else
-      ""
-    end
-  end
-
-  def priest(line_number)
-    if line_number >= 9
-      @@phrases[3]
-    else
-      ""
-    end
-  end
-
+  
   def tattered_and_torn(line_number)
     if line_number >= 8
       "the man all tattered and torn that kissed "
