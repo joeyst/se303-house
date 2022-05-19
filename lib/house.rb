@@ -10,7 +10,7 @@ class House
     "the cat that killed "]
 
   def line(line_number)
-      "This is #{appended_phrases(line_number)}#{cat(line_number)}#{rat(line_number)}#{malt(line_number)}the house that Jack built.\n"
+      "This is #{appended_phrases(line_number)}#{rat(line_number)}#{malt(line_number)}the house that Jack built.\n"
   end
 
   def recite
@@ -18,7 +18,7 @@ class House
   end
 
   def appended_phrases(line_number)
-    ((12-line_number)..(7)).map {|phrase_number| @@phrases[phrase_number]}.join("")
+    ((12-line_number)..(8)).map {|phrase_number| @@phrases[phrase_number]}.join("")
   end
 
   def cat(line_number)
