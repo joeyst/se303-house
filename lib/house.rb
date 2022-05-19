@@ -6,7 +6,8 @@ class House
     "the man all tattered and torn that kissed ",
     "the maiden all forlorn that milked ",
     "the cow with the crumpled horn that tossed ",
-    "the dog that worried "]
+    "the dog that worried ",
+    "the cat that killed "]
 
   def line(line_number)
       "This is #{appended_phrases(line_number)}#{cat(line_number)}#{rat(line_number)}#{malt(line_number)}the house that Jack built.\n"
