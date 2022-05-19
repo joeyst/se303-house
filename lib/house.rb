@@ -18,14 +18,6 @@ class House
     ((12-line_number)..(5)).map {|phrase_number| @@phrases[phrase_number]}.join("")
   end
 
-  def maiden(line_number)
-    if line_number >= 7
-      "the maiden all forlorn that milked "
-    else
-      ""
-    end
-  end
-
   def cow(line_number)
     if line_number >= 6
       "the cow with the crumpled horn that tossed "
