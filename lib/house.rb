@@ -22,12 +22,4 @@ class House
   def appended_phrases(line_number)
     ((12-line_number)..(10)).map {|phrase_number| @@phrases[phrase_number]}.join("")
   end
-
-  def malt(line_number)
-    if line_number >= 2
-      "the malt that lay in "
-    else
-      ""
-    end
-  end
 end
