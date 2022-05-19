@@ -20,14 +20,6 @@ class House
     ((12-line_number)..(7)).map {|phrase_number| @@phrases[phrase_number]}.join("")
   end
 
-  def dog(line_number)
-    if line_number >= 5
-      "the dog that worried "
-    else
-      ""
-    end
-  end
-
   def cat(line_number)
     if line_number >= 4
       "the cat that killed "
