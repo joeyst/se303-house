@@ -12,7 +12,7 @@ class House
     "the malt that lay in "]
 
   def line(line_number, prefix="This is")
-      "This is #{appended_phrases(line_number)}the house that Jack built.\n"
+      "#{prefix} #{appended_phrases(line_number)}the house that Jack built.\n"
   end
 
   def recite
