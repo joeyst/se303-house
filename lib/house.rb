@@ -11,7 +11,7 @@ class House
     "the rat that ate ",
     "the malt that lay in "]
 
-  def line(line_number, prefix=:FIXME)
+  def line(line_number, prefix="This is")
       "This is #{appended_phrases(line_number)}the house that Jack built.\n"
   end
 
