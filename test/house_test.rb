@@ -94,9 +94,14 @@ This is the horse and the hound and the horn that belonged to the farmer sowing 
     assert_equal expected, House.new.recite
   end
 
-  def test_pirate_verse
+  def test_first_pirate_line
     expected = "Thar is the house that Jack built.\n"
     assert_equal expected, House.new.line(1, "Thar is")
+  end
+
+  def test_second_pirate_line
+    expected = "Thar is the malt that lay in the house that Jack built.\n"
+    assert_equal expected, House.new.line(2, "This is")
   end
 
 end
