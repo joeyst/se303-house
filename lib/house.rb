@@ -25,6 +25,10 @@ class House
 end
 
 class PirateHouse
+  def initialize
+    @prefix="Thar is"
+  end
+
   def line(line_number, prefix="This is")
     "#{prefix} #{appended_phrases(line_number)}the house that Jack built.\n"
   end
