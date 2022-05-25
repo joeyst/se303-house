@@ -24,7 +24,7 @@ class House
   end
 end
 
-class PirateHouse
+class PirateHouse < House
   attr_reader :prefix
 
   def initialize
