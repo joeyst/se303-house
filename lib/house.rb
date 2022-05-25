@@ -28,7 +28,7 @@ class PirateHouse < House
   attr_reader :prefix
 
   def initialize
-    @prefix="Thar is"
+    @prefix="Thar be"
   end
 
   def line(line_number)
