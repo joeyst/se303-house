@@ -25,6 +25,8 @@ class House
 end
 
 class PirateHouse
+  attr_reader :prefix
+
   def initialize
     @prefix="Thar is"
   end
