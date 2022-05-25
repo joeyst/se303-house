@@ -7,7 +7,7 @@ class PirateHouseTest < Minitest::Test
 
   def test_first_pirate_line
     expected = "Thar is the house that Jack built.\n"
-    assert_equal expected, PirateHouse.new.line(1, "Thar is")
+    assert_equal expected, PirateHouse.new.line(1)
   end
 
 end
