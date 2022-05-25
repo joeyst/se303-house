@@ -35,3 +35,15 @@ class PirateHouse < House
     "#{prefix} #{appended_phrases(line_number)}the house that Jack built.\n"
   end
 end
+
+class RegularHouse < House
+  attr_reader :prefix
+
+  def initialize
+    @prefix="Thar is"
+  end
+
+  def line(line_number)
+    "#{prefix} #{appended_phrases(line_number)}the house that Jack built.\n"
+  end
+end
