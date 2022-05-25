@@ -23,3 +23,7 @@ class House
     ((12-line_number)..(10)).map {|phrase_number| @@phrases[phrase_number]}.join("")
   end
 end
+
+class HouseVersion
+
+end
