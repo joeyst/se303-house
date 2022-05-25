@@ -38,8 +38,4 @@ class RegularHouse < House
   def initialize
     @prefix="This is"
   end
-
-  def line(line_number)
-    "#{prefix} #{appended_phrases(line_number)}the house that Jack built.\n"
-  end
 end
