@@ -31,7 +31,7 @@ class PirateHouse < House
     @prefix="Thar is"
   end
 
-  def line(line_number, prefix="This is")
+  def line(line_number, delete_me="This is")
     "#{prefix} #{appended_phrases(line_number)}the house that Jack built.\n"
   end
 end
