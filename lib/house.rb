@@ -30,10 +30,6 @@ class PirateHouse < House
   def initialize
     @prefix="Thar be"
   end
-
-  def line(line_number)
-    "#{prefix} #{appended_phrases(line_number)}the house that Jack built.\n"
-  end
 end
 
 class RegularHouse < House
