@@ -40,7 +40,7 @@ class RegularHouse < House
   attr_reader :prefix
 
   def initialize
-    @prefix="Thar is"
+    @prefix="This is"
   end
 
   def line(line_number)
