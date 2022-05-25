@@ -10,6 +10,11 @@ class PirateHouseTest < Minitest::Test
     assert_equal expected, PirateHouse.new.line(1)
   end
 
+  def test_second_pirate_line
+    expected = "Thar is the malt that lay in the house that Jack built.\n"
+    assert_equal expected, PirateHouse.new.line(2)
+  end
+
 end
 
 class RegularHouseTest < Minitest::Test
