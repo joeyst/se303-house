@@ -93,7 +93,17 @@ This is the horse and the hound and the horn that belonged to the farmer sowing 
     TEXT
     assert_equal expected, RegularHouse.new.recite
   end
-  
+
+  def test_randomized_line_1
+    expected = "This is the house that Jack built.\n"
+    assert_equal expected, RegularHouse.new.randomize.line(1)
+  end
+
+  def test_randomized_line_2
+    expected = "This is the maiden all forlorn that milked the house that Jack built.\n"
+    assert_equal expected, RegularHouse.new.randomize.line(2)
+  end
+
 end
 
 class PirateHouseTest < Minitest::Test

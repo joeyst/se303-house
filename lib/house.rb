@@ -37,11 +37,13 @@ class House
   end
 
   def randomize
-    order = (0..phrases.length-1).to_a.shuffle(random: Random.new(1))
+    self.order = (0..phrases.length-1).to_a.shuffle(random: Random.new(1))
+    self
   end
 
   def unrandomize
-    order = (0..phrases.length-1).to_a
+    self.order = (0..phrases.length-1).to_a
+    self
   end
 end
 
