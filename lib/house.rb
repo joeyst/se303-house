@@ -1,6 +1,8 @@
 class House
+  attr_reader :phrases
+
   def initialize
-    @@phrases = ["the horse and the hound and the horn that belonged to ", 
+    @phrases = ["the horse and the hound and the horn that belonged to ", 
     "the farmer sowing his corn that kept ", 
     "the rooster that crowed in the morn that woke ",
     "the priest all shaven and shorn that married ",
@@ -23,7 +25,7 @@ class House
   end
 
   def appended_phrases(line_number)
-    ((12-line_number)..(10)).map {|phrase_number| @@phrases[phrase_number]}.join("")
+    ((12-line_number)..(10)).map {|phrase_number| phrases[phrase_number]}.join("")
   end
 end
 
