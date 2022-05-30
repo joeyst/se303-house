@@ -1,5 +1,6 @@
 class House
-  @@phrases = ["the horse and the hound and the horn that belonged to ", 
+  def initialize
+    @@phrases = ["the horse and the hound and the horn that belonged to ", 
     "the farmer sowing his corn that kept ", 
     "the rooster that crowed in the morn that woke ",
     "the priest all shaven and shorn that married ",
@@ -10,6 +11,7 @@ class House
     "the cat that killed ",
     "the rat that ate ",
     "the malt that lay in "]
+  end
 
   def line(line_number)
     raise "Must assign value to prefix instance variable" if (prefix == nil)
@@ -29,6 +31,7 @@ class PirateHouse < House
   attr_reader :prefix
 
   def initialize
+    super()
     @prefix="Thar be"
   end
 end
@@ -37,11 +40,15 @@ class RegularHouse < House
   attr_reader :prefix
 
   def initialize
+    super()
     @prefix="This is"
   end
 end
 
 class NewHouse < House
   attr_reader :prefix
+  def initialize
+    super()
+  end
   
 end
