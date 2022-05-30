@@ -1,5 +1,6 @@
 class House
-  attr_reader :phrases, :order
+  attr_accessor :order
+  attr_reader :phrases
 
   def initialize
     @phrases = ["the horse and the hound and the horn that belonged to ", 
@@ -37,6 +38,10 @@ class House
 
   def randomize
     order = (0..phrases.length-1).to_a.shuffle(random: Random.new(1))
+  end
+
+  def unrandomize
+    order = ((phrases.length+1-line_number)..(phrases.length-1))
   end
 end
 
