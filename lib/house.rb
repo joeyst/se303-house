@@ -14,7 +14,8 @@ class House
     "the rat that ate ",
     "the malt that lay in "]
 
-    @order = [0..phrases.length-1].shuffle
+    # random seed used to consistently shuffle for testing
+    @order = [0..phrases.length-1].shuffle(random: Random.new(1))
   end
 
   def line(line_number)
