@@ -12,6 +12,7 @@ class House
     "the malt that lay in "]
 
   def line(line_number)
+    raise "Must assign value to prefix instance variable" if (prefix == nil)
     "#{prefix} #{appended_phrases(line_number)}the house that Jack built.\n"
   end
 
@@ -38,4 +39,9 @@ class RegularHouse < House
   def initialize
     @prefix="This is"
   end
+end
+
+class NewHouse < House
+  attr_reader :prefix
+  
 end

@@ -25,3 +25,10 @@ class RegularHouseTest < Minitest::Test
   end
 
 end
+
+class NewHouseTest < Minitest::Test
+
+  def test_first_new_line
+    assert_raises(StandardError) {NewHouse.new.line(1)}
+  end
+end
