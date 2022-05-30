@@ -28,7 +28,7 @@ class House
   end
 
   def appended_phrases(line_number)
-    ((12-line_number)..(10)).map {|phrase_number| phrases[phrase_number]}.join("")
+    ((phrases.length+1-line_number)..(phrases.length-1)).map {|phrase_number| phrases[phrase_number]}.join("")
   end
 end
 
