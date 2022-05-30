@@ -34,6 +34,10 @@ class House
   def random_order_phrases(line_number)
     (order.take(line_number)).map {|phrase_number| phrases[phrase_number]}.join("")
   end
+
+  def randomize
+    order = (0..phrases.length-1).to_a.shuffle(random: Random.new(1))
+  end
 end
 
 class PirateHouse < House
