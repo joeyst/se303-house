@@ -41,7 +41,7 @@ class House
   end
 
   def unrandomize
-    order = ((phrases.length+1-line_number)..(phrases.length-1))
+    order = (0..phrases.length-1).to_a
   end
 end
 
