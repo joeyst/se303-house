@@ -95,3 +95,33 @@ This is the horse and the hound and the horn that belonged to the farmer sowing 
   end
   
 end
+
+class PirateHouseTest < Minitest::Test
+
+  def test_first_pirate_line
+    expected = "Thar be the house that Jack built.\n"
+    assert_equal expected, PirateHouse.new.line(1)
+  end
+
+  def test_second_pirate_line
+    expected = "Thar be the malt that lay in the house that Jack built.\n"
+    assert_equal expected, PirateHouse.new.line(2)
+  end
+
+end
+
+class RegularHouseTest < Minitest::Test
+
+  def test_first_regular_line
+    expected = "This is the house that Jack built.\n"
+    assert_equal expected, RegularHouse.new.line(1)
+  end
+
+end
+
+class NewHouseTest < Minitest::Test
+
+  def test_first_new_line
+    assert_raises(StandardError) {NewHouse.new.line(1)}
+  end
+end
