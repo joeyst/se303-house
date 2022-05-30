@@ -15,7 +15,7 @@ class House
     "the malt that lay in "]
 
     # random seed used to consistently shuffle for testing
-    @order = [0..phrases.length-1].shuffle(random: Random.new(1))
+    @order = (0..phrases.length-1).to_a.shuffle(random: Random.new(1))
   end
 
   def line(line_number)
