@@ -1,5 +1,5 @@
 class House
-  attr_reader :phrases
+  attr_reader :phrases, :order
 
   def initialize
     @phrases = ["the horse and the hound and the horn that belonged to ", 
@@ -13,6 +13,8 @@ class House
     "the cat that killed ",
     "the rat that ate ",
     "the malt that lay in "]
+
+    @order = [0..phrases.length-1].shuffle
   end
 
   def line(line_number)
