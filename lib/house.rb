@@ -30,6 +30,10 @@ class House
   def appended_phrases(line_number)
     ((phrases.length+1-line_number)..(phrases.length-1)).map {|phrase_number| phrases[phrase_number]}.join("")
   end
+
+  def random_order_phrases(line_number)
+    (order.take(line_number)).map {|phrase_number| phrases[phrase_number]}.join("")
+  end
 end
 
 class PirateHouse < House
