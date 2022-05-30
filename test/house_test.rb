@@ -110,15 +110,6 @@ class PirateHouseTest < Minitest::Test
 
 end
 
-class RegularHouseTest < Minitest::Test
-
-  def test_first_regular_line
-    expected = "This is the house that Jack built.\n"
-    assert_equal expected, RegularHouse.new.line(1)
-  end
-
-end
-
 class NewHouseTest < Minitest::Test
 
   def test_first_new_line
