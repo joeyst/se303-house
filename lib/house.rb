@@ -3,6 +3,7 @@ class House
   attr_reader :subject_phrases, :verb_phrases
 
   def initialize
+    raise "Must subclass House" if self.class == House
 
     @subject_phrases = ["the horse and the hound and the horn",
       "the farmer sowing his corn",
