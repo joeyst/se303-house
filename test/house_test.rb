@@ -138,6 +138,16 @@ class PirateHouseTest < Minitest::Test
     assert_equal expected, PirateHouse.new.line(2)
   end
 
+  def test_fully_randomized_pirate_line_2
+    expected = "Thar be the cat that lay in the house that Jack built.\n"
+    assert_equal expected, PirateHouse.new.fully_randomize.line(2)
+  end
+
+  def test_fully_randomized_pirate_line_3
+    expected = "Thar be the malt that killed the cat that lay in the house that Jack built.\n"
+    assert_equal expected, PirateHouse.new.fully_randomize.line(3)
+  end
+
 end
 
 class NewHouseTest < Minitest::Test
