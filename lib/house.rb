@@ -1,5 +1,5 @@
 class House
-  attr_accessor :order, :order_of_subjects, :order_of_verbs
+  attr_accessor :order_of_subjects, :order_of_verbs
   attr_reader :subject_phrases, :verb_phrases
 
   def initialize
@@ -28,8 +28,6 @@ class House
       "ate",
       "lay in"]
 
-    # random seed used to consistently shuffle for testing
-    @order = (0..subject_phrases.length-1).to_a
     @order_of_subjects = (0..subject_phrases.length-1).to_a
     @order_of_verbs = (0..verb_phrases.length-1).to_a
   end
