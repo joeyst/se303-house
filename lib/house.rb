@@ -35,7 +35,7 @@ class House
   end
 
   def one_phrase(phrase_number)
-    "#{subject_phrases[phrase_number]} that #{verb_phrases[phrase_number]} "
+    "#{subject_phrases[order_of_subjects[phrase_number]]} that #{verb_phrases[order_of_verbs[phrase_number]]} "
   end
 
   def line(line_number)
