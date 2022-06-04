@@ -1,6 +1,6 @@
 class House
   attr_accessor :order
-  attr_reader :phrases
+  attr_reader :phrases, :subject_phrases, :verb_phrases
 
   def initialize
     @phrases = ["the horse and the hound and the horn that belonged to ", 
