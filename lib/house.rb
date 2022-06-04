@@ -27,6 +27,18 @@ class House
       "the rat",
       "the malt"]
 
+    @verb_phrases = ["belonged to",
+      "kept",
+      "woke",
+      "married",
+      "kissed",
+      "milked",
+      "tossed",
+      "worried",
+      "killed",
+      "ate",
+      "lay in"]
+
     # random seed used to consistently shuffle for testing
     @order = (0..phrases.length-1).to_a
   end
