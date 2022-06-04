@@ -115,11 +115,13 @@ This is the horse and the hound and the horn that belonged to the farmer sowing 
   end
 
   def test_fully_randomized_line_2
-    
+    expected = "This is the cat that lay in the house that Jack built.\n"
+    assert_equal expected, RegularHouse.new.fully_randomize.line(2)
   end
 
   def test_fully_randomized_line_3
-
+    expected = "This is the malt that killed the cat that lay in the house that Jack built.\n"
+    assert_equal expected, RegularHouse.new.fully_randomize.line(3)
   end
 
 end
