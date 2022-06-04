@@ -30,6 +30,8 @@ class House
 
     # random seed used to consistently shuffle for testing
     @order = (0..subject_phrases.length-1).to_a
+    @order_of_subjects = (0..subject_phrases.length-1).to_a
+    @order_of_verbs = (0..verb_phrases.length-1).to_a
   end
 
   def one_phrase(phrase_number)
