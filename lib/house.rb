@@ -1,5 +1,5 @@
 class House
-  attr_accessor :order
+  attr_accessor :order, :order_of_subjects, :order_of_verbs
   attr_reader :subject_phrases, :verb_phrases
 
   def initialize
