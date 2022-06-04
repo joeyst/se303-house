@@ -52,8 +52,9 @@ class House
   end
 
   def randomize
-    self.order_of_subjects = (0..subject_phrases.length-1).to_a.shuffle(random: Random.new(1))
-    self.order_of_verbs = (0..verb_phrases.length-1).to_a.shuffle(random: Random.new(1))
+    randomized_order = (0..subject_phrases.length-1).to_a.shuffle(random: Random.new(1))
+    self.order_of_subjects = randomized_order
+    self.order_of_verbs = randomized_order
     self
   end
 
