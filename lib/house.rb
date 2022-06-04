@@ -48,7 +48,7 @@ class House
   end
 
   def appended_phrases(line_number)
-    (order[order.length+1-line_number..order.length-1]).map {|phrase_number| one_phrase(phrase_number)}.join("")
+    (order[order.length+1-line_number..order_of_subjects.length-1]).map {|phrase_number| one_phrase(phrase_number)}.join("")
   end
 
   def randomize
