@@ -43,6 +43,10 @@ class House
     @order = (0..phrases.length-1).to_a
   end
 
+  def one_phrase(phrase_number)
+    "#{@subject_phrases[phrase_number-1]} that #{verb_phrases[phrase_number-1]}"
+  end
+
   def line(line_number)
     raise "Must assign value to prefix instance variable" if (prefix == nil)
     "#{prefix} #{appended_phrases(line_number)}the house that Jack built.\n"
