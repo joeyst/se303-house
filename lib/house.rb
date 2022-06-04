@@ -49,6 +49,12 @@ class House
     (order_of_subjects.length-line_number+1..order_of_subjects.length-1).map {|phrase_number| one_phrase(phrase_number)}.join("")
   end
 
+  def fully_randomize
+    self.order_of_subjects = (0..subject_phrases.length-1).to_a.shuffle(random: Random.new(2))
+    self.order_of_verbs = (0..verb_phrases.length-1).to_a.shuffle(random: Random.new(3))
+    self
+  end
+
   def randomize
     randomized_order = (0..subject_phrases.length-1).to_a.shuffle(random: Random.new(1))
     self.order_of_subjects = randomized_order
