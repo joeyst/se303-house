@@ -60,10 +60,6 @@ class House
     (order[order.length+1-line_number..order.length-1]).map {|phrase_number| phrases[phrase_number]}.join("")
   end
 
-  def random_order_phrases(line_number)
-    (order.take(line_number)).map {|phrase_number| phrases[phrase_number]}.join("")
-  end
-
   def randomize
     self.order = (0..phrases.length-1).to_a.shuffle(random: Random.new(1))
     self
