@@ -96,12 +96,12 @@ This is the horse and the hound and the horn that belonged to the farmer sowing 
 
   def test_randomized_line_1
     expected = "This is the house that Jack built.\n"
-    assert_equal expected, RegularHouse.new.randomize.line(1)
+    assert_equal expected, RegularHouse.new.randomize(Random.new(1)).line(1)
   end
 
   def test_randomized_line_2
     expected = "This is the maiden all forlorn that milked the house that Jack built.\n"
-    assert_equal expected, RegularHouse.new.randomize.line(2)
+    assert_equal expected, RegularHouse.new.randomize(Random.new(1)).line(2)
   end
 
   def test_unrandomized_line_2
@@ -116,12 +116,12 @@ This is the horse and the hound and the horn that belonged to the farmer sowing 
 
   def test_fully_randomized_line_2
     expected = "This is the cat that lay in the house that Jack built.\n"
-    assert_equal expected, RegularHouse.new.fully_randomize.line(2)
+    assert_equal expected, RegularHouse.new.fully_randomize(Random.new(2), Random.new(3)).line(2)
   end
 
   def test_fully_randomized_line_3
     expected = "This is the malt that killed the cat that lay in the house that Jack built.\n"
-    assert_equal expected, RegularHouse.new.fully_randomize.line(3)
+    assert_equal expected, RegularHouse.new.fully_randomize(Random.new(2), Random.new(3)).line(3)
   end
 
 end
@@ -140,12 +140,12 @@ class PirateHouseTest < Minitest::Test
 
   def test_fully_randomized_pirate_line_2
     expected = "Thar be the cat that lay in the house that Jack built.\n"
-    assert_equal expected, PirateHouse.new.fully_randomize.line(2)
+    assert_equal expected, PirateHouse.new.fully_randomize(Random.new(2), Random.new(3)).line(2)
   end
 
   def test_fully_randomized_pirate_line_3
     expected = "Thar be the malt that killed the cat that lay in the house that Jack built.\n"
-    assert_equal expected, PirateHouse.new.fully_randomize.line(3)
+    assert_equal expected, PirateHouse.new.fully_randomize(Random.new(2), Random.new(3)).line(3)
   end
 
 end
