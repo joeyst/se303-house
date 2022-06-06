@@ -1,6 +1,6 @@
 class House
   attr_accessor :order_of_subjects, :order_of_verbs
-  attr_reader :subject_phrases, :verb_phrases
+  attr_reader :subject_phrases, :verb_phrases, :first_seed, :second_seed
 
   def initialize
     raise "Must subclass House" if self.class == House
@@ -31,6 +31,8 @@ class House
 
     @order_of_subjects = (0..subject_phrases.length-1).to_a
     @order_of_verbs = (0..verb_phrases.length-1).to_a
+    @first_seed = Random.new
+    @second_seed = Random.new
   end
 
   def one_phrase(phrase_number)
@@ -68,10 +70,6 @@ class House
     self.order_of_verbs = (0..verb_phrases.length-1).to_a
     self
   end
-end
-
-class Line
-
 end
 
 class PirateHouse < House
