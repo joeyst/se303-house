@@ -1,6 +1,6 @@
 class House
   attr_accessor :order_of_subjects, :order_of_verbs
-  attr_reader :subject_phrases, :verb_phrases, :first_seed, :second_seed
+  attr_reader :subject_phrases, :verb_phrases, :first_seed, :second_seed, :prefix
 
   def initialize
     raise "Must subclass House" if self.class == House
@@ -73,7 +73,6 @@ class House
 end
 
 class PirateHouse < House
-  attr_reader :prefix
 
   def initialize
     super()
@@ -83,7 +82,6 @@ class PirateHouse < House
 end
 
 class RegularHouse < House
-  attr_reader :prefix
 
   def initialize
     super()
@@ -93,7 +91,6 @@ class RegularHouse < House
 end
 
 class NewHouse < House
-  attr_reader :prefix
   
   def initialize
     super()
