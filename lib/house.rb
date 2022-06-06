@@ -70,6 +70,10 @@ class House
   end
 end
 
+class Line
+
+end
+
 class PirateHouse < House
   attr_reader :prefix
 
@@ -77,6 +81,7 @@ class PirateHouse < House
     super()
     @prefix="Thar be"
   end
+
 end
 
 class RegularHouse < House
@@ -86,10 +91,12 @@ class RegularHouse < House
     super()
     @prefix="This is"
   end
+
 end
 
 class NewHouse < House
   attr_reader :prefix
+  
   def initialize
     super()
   end
